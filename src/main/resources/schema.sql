@@ -1,0 +1,8 @@
+USE archive_db;
+
+CREATE TABLE IF NOT EXISTS my_table (
+  id BIGINT NOT NULL,
+  data TEXT,
+  archived_at TIMESTAMP NULL,
+  PRIMARY KEY (id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
